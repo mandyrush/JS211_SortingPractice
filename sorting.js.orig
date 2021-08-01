@@ -2,8 +2,8 @@
 
     // Given 1000 digits of PI as strings, return an array of the digits as numbers
     const stringsToNumbs = (numbers) => {
-      // Loop over each item in the given array and convert the item to a number
-      return numbers.map(string => parseInt(string));
+            // Loop over each item in the given array and convert the item to a number
+            return numbers.map(string => parseInt(string));
     }
     console.log('Number Array: ', stringsToNumbs(strNums));
 
@@ -11,13 +11,13 @@
 
     // With the same numbers, find the sum of the even values
     const sumEvens = (numbers) => {
-      // Convert all elements to number
-      // Find all of the even numbers
-      // Add the even numbers together 
-      return numbers
-          .map(string => parseInt(string))
-          .filter((number) => number % 2 === 0)
-          .reduce((result, item) => result + item)
+        // Convert all elements to number
+        // Find all of the even numbers
+        // Add the even numbers together 
+        return numbers
+            .map(string => parseInt(string))
+            .filter((number) => number % 2 === 0)
+            .reduce((result, item) => result + item)
     }
     console.log('Sum of Even Numbers: ', sumEvens(strNums));
 
